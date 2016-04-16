@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Shaper - Ludum Dare 35</title>
+        <meta name="description" content="Shaper, a 2D game made with DE2D for Ludum Dare 35">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+        
+        <!-- LOAD FONTS -->
+        <style type="text/css">
+            @font-face {
+                font-family: 'MainFont';
+                src: url('game/res/fonts/NoType.ttf');
+            }
+        </style>
+        <!-- END OF LOADING FONTS -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/diesel.js"></script>
+        
+        
+        <script type="text/javascript" src="game/js/menu_state.js"></script>
+        <script type="text/javascript" src="game/js/gameplay_state.js"></script>
+        <script type="text/javascript" src="game/js/game.js"></script>
+        
+        <script type="text/javascript" src="lib/diesel_launcher.js"></script>
+    </head>
+    <body onload = "game_init()">
+    	<!-- LOAD ASSETS -->
+        <div id = "assets">
+            <img id = "game/res/bg.png" src = "game/res/bg.png" width="0px" height="0px" style="position:fixed;"></img>
+        
+            <img id = "game/res/button/normal.png" src = "game/res/button/normal.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/button/hover.png" src = "game/res/button/hover.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/button/click.png" src = "game/res/button/click.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/button/disabled.png" src = "game/res/button/disabled.png" width="0px" height="0px" style="position:fixed;"></img>
+
+            <img id = "game/res/triangle.png" src = "game/res/triangle.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/square.png" src = "game/res/square.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/pentagon.png" src = "game/res/pentagon.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/hexagon.png" src = "game/res/hexagon.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/septagon.png" src = "game/res/septagon.png" width="0px" height="0px" style="position:fixed;"></img>
+            <img id = "game/res/octagon.png" src = "game/res/octagon.png" width="0px" height="0px" style="position:fixed;"></img>
+
+            <img id = "game/res/pause.png" src = "game/res/pause.png" width="0px" height="0px" style="position:fixed;"></img>
+
+            <audio id = "game/res/music.mp3" src="game/res/music.mp3"></audio>
+        </div>
+    	<!-- END OF LOADING ASSETS -->
+        <canvas id = "game_canvas">
+            If you can read this text, your browser does not support the HTML Canvas. Google Chrome should work fine.
+        </canvas>
+    </body>
+</html>
