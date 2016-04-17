@@ -176,12 +176,18 @@ var GameplayState = GameplayState || {
                     if(playerIndex != shapes.length - 1)
                     {
                         playerIndex++;
+                    } else 
+                    {
+                        playerIndex = 0;
                     }
                 } else if(DE_Input.getKeyDown(40))
                 {
                     if(playerIndex != 0)
                     {
                         playerIndex--;
+                    } else
+                    {
+                        playerIndex = shapes.length - 1;
                     }
                 }
 
